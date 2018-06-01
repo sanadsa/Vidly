@@ -11,14 +11,30 @@ namespace Vidly.Controllers
     {
         // GET: Customers
         public ActionResult Index()
-        {
-            var customers = new List<Customer>
+        {  
+            return View(getCustomers());
+        }
+
+        //GET: Customers/Details/Id
+        [Route("customers/details/{id}")]
+        public ActionResult Details(int id)
+        {           
+            var customer = getCustomers().Find(item => item.Id == id);
+
+            if (customer != null)
+            {
+                return View(customer);
+            }            
+            else
+            {
+                return HttpNotFound();
+            }
+        }
+
+        private List<Customer> getCustomers() => new List<Customer>
             {
                 new Customer() { Id = 1, Name = "Jhon" },
                 new Customer() { Id = 2, Name = "mate" }
             };
-
-            return View(customers);
-        }
     }
 }

@@ -213,6 +213,18 @@
     <Compile Include="Migrations\201806031516248_PopulateMembershipTypes.Designer.cs">
       <DependentUpon>201806031516248_PopulateMembershipTypes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201806042255351_ApplyAnnotationsToCustomerName.cs" />
+    <Compile Include="Migrations\201806042255351_ApplyAnnotationsToCustomerName.Designer.cs">
+      <DependentUpon>201806042255351_ApplyAnnotationsToCustomerName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806042341066_AddNameToMembersgipType.cs" />
+    <Compile Include="Migrations\201806042341066_AddNameToMembersgipType.Designer.cs">
+      <DependentUpon>201806042341066_AddNameToMembersgipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806042344218_SetNameOfMembershipTypes.cs" />
+    <Compile Include="Migrations\201806042344218_SetNameOfMembershipTypes.Designer.cs">
+      <DependentUpon>201806042344218_SetNameOfMembershipTypes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -315,6 +327,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201806031516248_PopulateMembershipTypes.resx">
       <DependentUpon>201806031516248_PopulateMembershipTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806042255351_ApplyAnnotationsToCustomerName.resx">
+      <DependentUpon>201806042255351_ApplyAnnotationsToCustomerName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806042341066_AddNameToMembersgipType.resx">
+      <DependentUpon>201806042341066_AddNameToMembersgipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806042344218_SetNameOfMembershipTypes.resx">
+      <DependentUpon>201806042344218_SetNameOfMembershipTypes.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
